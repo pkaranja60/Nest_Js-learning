@@ -11,10 +11,10 @@ datasource db {
 }
 
 model Employee {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   name      String
-  email     String   @unique
+  email     String    @unique
   role      String[]
-  createdAt DateTime @default(now())
-  upDatedAt DateTime @updatedAt
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
 }
